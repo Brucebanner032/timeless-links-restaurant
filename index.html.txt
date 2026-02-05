@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeless Links Restaurant | Accra</title>
+  <meta name="description" content="Timeless Links Restaurant – premium African-contemporary dining in Accra. Open 24 hours. Dine-in, drive-through & delivery." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+    :root {
+      --gold: #c9a227;
+      --green: #1f3d2b;
+      --brown: #3a2f28;
+      --light: #faf8f5;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--green);
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    section { padding: 80px 20px; }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(31,61,43,0.95);
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav a:hover { color: var(--gold); }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--gold);
+      border-radius: 30px;
+      font-weight: 600;
+      color: #000;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover { opacity: 0.85; transform: translateY(-2px); }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+      url("images/hero-dining.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 { font-size: 3rem; color: #fff; margin-bottom: 16px; }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    img { width: 100%; border-radius: 16px; }
+
+    /* MENU */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .menu-card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 24px;
+      text-align: center;
+    }
+
+    .service-box {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .service-box i {
+      font-size: 2.2rem;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 16px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 24px;
+    }
+
+    .testimonial {
+      background: #fff;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+      gap: 30px;
+      align-items: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border-radius: 16px;
+      border: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--green);
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 24px;
+    }
+
+    .socials a {
+      color: var(--gold);
+      font-size: 1.2rem;
+      margin-right: 14px;
+    }
+
+    @media(max-width:768px){
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav container">
+    <div class="logo">Timeless Links</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Where Taste Meets Timeless Elegance</h1>
+    <p>Premium African-contemporary dining in Accra. Open 24 hours for dine-in, drive-through & no-contact delivery.</p>
+    <div class="hero-actions">
+      <a href="PASTE_BOLT_FOOD_LINK_HERE" target="_blank" class="btn">Order Now</a>
+      <a href="tel:0505389300" class="btn">Call Us</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div>
+      <h2>About Timeless Links</h2>
+      <p>Located on Race Course Street, Accra, Timeless Links Restaurant offers an elegant yet welcoming experience, blending authentic African flavors with modern cuisine.</p>
+      <p><strong>Average spend:</strong> GH₵50–100 per person</p>
+    </div>
+    <img src="images/restaurant-interior.jpg" alt="Timeless Links Restaurant interior">
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-card"><h3>Local Dishes</h3><p>Jollof rice, banku & tilapia, fufu with rich soups.</p></div>
+      <div class="menu-card"><h3>Continental Meals</h3><p>Pasta, steaks, grilled chicken & gourmet dishes.</p></div>
+      <div class="menu-card"><h3>Drinks</h3><p>Fresh juices, cocktails, mocktails & beverages.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box"><i class="fa-solid fa-utensils"></i><h3>Dine-In</h3></div>
+      <div class="service-box"><i class="fa-solid fa-car"></i><h3>Drive-Through</h3></div>
+      <div class="service-box"><i class="fa-solid fa-motorcycle"></i><h3>Delivery</h3></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/food-dining.jpg">
+      <img src="images/jollof-plantain.jpg">
+      <img src="images/drinks.jpg">
+      <img src="images/grilled-meat.jpg">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> 050 538 9300</p>
+      <p><strong>Location:</strong> Race Course Street, Accra (JP3R+HP)</p>
+      <p><strong>Hours:</strong> Open 24 Hours</p>
+      <a href="https://www.google.com/maps?q=JP3R+HP+Accra" target="_blank" class="btn">Get Directions</a>
+    </div>
+    <iframe src="https://www.google.com/maps?q=JP3R+HP+Accra&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <div>
+      <h3>Timeless Links Restaurant</h3>
+      <p>Premium dining, anytime.</p>
+    </div>
+    <div>
+      <p>Open 24 Hours</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
